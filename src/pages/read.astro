@@ -6,20 +6,20 @@ import Hero from '../components/Hero.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const projects = (await getCollection('work')).filter((f) => f.data.type == 'project').sort(
+const projects = (await getCollection('work')).filter((f) => f.data.type == 'read').sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 ---
 
 <BaseLayout
-	title="Work | Thapana Palasri"
-	description="Learn about Thapana White's most recent projects"
+	title="Read | Thapana Palasri"
+	description="Learn about Thapana Read's most recent books"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="My Work"
-				tagline="See my most recent projects below to get an idea of my past experience."
+				title="My Read"
+				tagline="See my most recent books below to get an idea of my past experience."
 				align="start"
 			/>
 			<Grid variant="offset">

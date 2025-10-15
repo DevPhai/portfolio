@@ -9,6 +9,7 @@ tags:
   - Design
   - Dev
   - User Testing
+type: project
 ---
 
 ## Level-two heading
